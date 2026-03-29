@@ -1,0 +1,591 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ==================== ENUMS ====================
+
+enum UserRole {
+  guest
+  applicant
+  employer
+  curator
+  admin
+}
+
+enum OpportunityType {
+  internship
+  vacancy
+  mentoring_program
+  career_event
+}
+
+enum OpportunityFormat {
+  office
+  hybrid
+  remote
+  online
+}
+
+enum Level {
+  intern
+  junior
+  junior_plus
+  middle
+}
+
+enum EmploymentType {
+  full_time
+  part_time
+  project
+  temporary
+  internship
+}
+
+enum OpportunityStatus {
+  draft
+  pending_moderation
+  active
+  closed
+  planned
+  rejected
+  archived
+}
+
+enum ApplicationStatus {
+  new
+  in_review
+  invited
+  reserve
+  accepted
+  rejected
+  withdrawn
+}
+
+enum VerificationStatus {
+  draft
+  pending
+  verified
+  rejected
+  restricted
+}
+
+enum PrivacyLevel {
+  only_me
+  curators_only
+  employers_and_curators
+  all_authenticated
+}
+
+enum ContactStatus {
+  pending
+  accepted
+  rejected
+  blocked
+}
+
+enum ModerationStatus {
+  pending
+  approved
+  rejected
+}
+
+enum ModerationItemType {
+  opportunity
+  company
+  tag
+  report
+}
+
+enum ReportStatus {
+  pending
+  in_review
+  resolved
+  dismissed
+}
+
+enum ReportReason {
+  spam
+  inappropriate_content
+  fraud
+  misleading_info
+  discrimination
+  other
+}
+
+enum AuditAction {
+  create
+  update
+  delete
+  status_change
+  moderation
+  login
+  logout
+  verification
+  report
+}
+
+enum NotificationType {
+  application_status
+  new_application
+  contact_request
+  contact_accepted
+  recommendation
+  verification_status
+  moderation_decision
+  system
+}
+
+// ==================== MODELS ====================
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  password      String
+  displayName   String
+  role          UserRole  @default(guest)
+  emailVerified DateTime?
+  image         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  deletedAt     DateTime?
+
+  // Relations
+  applicantProfile   ApplicantProfile?
+  company            Company?
+  favorites          Favorite[]
+  applications       Application[]
+  contactsSent       ProfessionalContact[] @relation("ContactSender")
+  contactsReceived   ProfessionalContact[] @relation("ContactReceiver")
+  recommendations    ContactRecommendation[]
+  notifications      Notification[]
+  auditLogs          AuditLog[]
+  reportsCreated     Report[] @relation("ReportCreator")
+  reportsTarget      Report[] @relation("ReportTarget")
+  moderationItems    ModerationQueueItem[]
+  
+  @@index([email])
+  @@index([role])
+  @@map("users")
+}
+
+model ApplicantProfile {
+  id                String       @id @default(cuid())
+  userId            String       @unique
+  fullName          String
+  university        String
+  faculty           String?
+  course            String?
+  graduationYear    Int?
+  city              String
+  about             String?      @db.Text
+  githubUrl         String?
+  gitlabUrl         String?
+  portfolioUrl      String?
+  resumeUrl         String?
+  privacyLevel      PrivacyLevel @default(employers_and_curators)
+  createdAt         DateTime     @default(now())
+  updatedAt         DateTime     @updatedAt
+
+  // Relations
+  user              User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  skills            ApplicantSkillTag[]
+  projects          Project[]
+  experiences       Experience[]
+  
+  @@index([userId])
+  @@index([city])
+  @@map("applicant_profiles")
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  profileId   String
+  title       String
+  description String?  @db.Text
+  url         String?
+  technologies String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  profile     ApplicantProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  
+  @@index([profileId])
+  @@map("projects")
+}
+
+model Experience {
+  id          String    @id @default(cuid())
+  profileId   String
+  company     String
+  position    String
+  description String?   @db.Text
+  startDate   DateTime
+  endDate     DateTime?
+  isCurrent   Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  profile     ApplicantProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  
+  @@index([profileId])
+  @@map("experiences")
+}
+
+model Company {
+  id              String             @id @default(cuid())
+  userId          String             @unique
+  name            String
+  inn             String?
+  website         String?
+  email           String
+  description     String?            @db.Text
+  industry        String?
+  city            String
+  address         String?
+  logoUrl         String?
+  bannerUrl       String?
+  socialLinks     Json?
+  verificationStatus VerificationStatus @default(draft)
+  createdAt       DateTime           @default(now())
+  updatedAt       DateTime           @updatedAt
+
+  // Relations
+  user            User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  opportunities   Opportunity[]
+  verification    EmployerVerification?
+  
+  @@index([userId])
+  @@index([verificationStatus])
+  @@map("companies")
+}
+
+model EmployerVerification {
+  id                String             @id @default(cuid())
+  companyId         String             @unique
+  inn               String
+  corporateEmail    String
+  website           String?
+  socialLinks       Json?
+  documents         String[]
+  status            VerificationStatus @default(pending)
+  curatorNotes      String?            @db.Text
+  reviewedBy        String?
+  reviewedAt        DateTime?
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+
+  company           Company            @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  
+  @@index([companyId])
+  @@index([status])
+  @@map("employer_verifications")
+}
+
+model Opportunity {
+  id                String            @id @default(cuid())
+  companyId         String
+  title             String
+  shortDescription  String
+  fullDescription   String            @db.Text
+  requirements      String?           @db.Text
+  responsibilities  String?           @db.Text
+  program           String?           @db.Text
+  type              OpportunityType
+  format            OpportunityFormat
+  level             Level
+  employmentType    EmploymentType
+  city              String?
+  address           String?
+  latitude          Float?
+  longitude         Float?
+  salaryFrom        Int?
+  salaryTo          Int?
+  salaryCurrency    String            @default("RUB")
+  startDate         DateTime?
+  endDate           DateTime?
+  deadline          DateTime?
+  publishedAt       DateTime?
+  status            OpportunityStatus @default(draft)
+  views             Int               @default(0)
+  applicationsCount Int               @default(0)
+  contacts          Json?
+  infoResources     Json?
+  mediaFiles        MediaFile[]
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+  deletedAt         DateTime?
+
+  // Relations
+  company           Company           @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  tags              OpportunityTag[]
+  favorites         Favorite[]
+  applications      Application[]
+  
+  @@index([companyId])
+  @@index([type])
+  @@index([format])
+  @@index([level])
+  @@index([city])
+  @@index([status])
+  @@index([publishedAt])
+  @@index([deadline])
+  @@index([latitude, longitude])
+  @@map("opportunities")
+}
+
+model MediaFile {
+  id            String      @id @default(cuid())
+  opportunityId String?
+  fileName      String
+  fileUrl       String
+  fileType      String
+  fileSize      Int
+  createdAt     DateTime    @default(now())
+
+  opportunity   Opportunity? @relation(fields: [opportunityId], references: [id], onDelete: SetNull)
+  
+  @@index([opportunityId])
+  @@map("media_files")
+}
+
+model Tag {
+  id            String             @id @default(cuid())
+  name          String             @unique
+  category      String
+  isSystem      Boolean            @default(false)
+  status        ModerationStatus   @default(approved)
+  suggestedBy   String?
+  createdAt     DateTime           @default(now())
+  updatedAt     DateTime           @updatedAt
+
+  // Relations
+  opportunities OpportunityTag[]
+  applicants    ApplicantSkillTag[]
+  
+  @@index([category])
+  @@index([status])
+  @@map("tags")
+}
+
+model OpportunityTag {
+  id            String      @id @default(cuid())
+  opportunityId String
+  tagId         String
+  createdAt     DateTime    @default(now())
+
+  opportunity   Opportunity @relation(fields: [opportunityId], references: [id], onDelete: Cascade)
+  tag           Tag         @relation(fields: [tagId], references: [id], onDelete: Cascade)
+  
+  @@unique([opportunityId, tagId])
+  @@index([opportunityId])
+  @@index([tagId])
+  @@map("opportunity_tags")
+}
+
+model ApplicantSkillTag {
+  id        String           @id @default(cuid())
+  profileId String
+  tagId     String
+  createdAt DateTime         @default(now())
+
+  profile   ApplicantProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  tag       Tag              @relation(fields: [tagId], references: [id], onDelete: Cascade)
+  
+  @@unique([profileId, tagId])
+  @@index([profileId])
+  @@index([tagId])
+  @@map("applicant_skill_tags")
+}
+
+model Favorite {
+  id            String       @id @default(cuid())
+  userId        String
+  opportunityId String
+  createdAt     DateTime     @default(now())
+
+  user          User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  opportunity   Opportunity  @relation(fields: [opportunityId], references: [id], onDelete: Cascade)
+  
+  @@unique([userId, opportunityId])
+  @@index([userId])
+  @@index([opportunityId])
+  @@map("favorites")
+}
+
+model Application {
+  id            String                   @id @default(cuid())
+  userId        String
+  opportunityId String
+  coverLetter   String?                  @db.Text
+  resumeUrl     String?
+  status        ApplicationStatus        @default(new)
+  employerNotes String?                  @db.Text
+  createdAt     DateTime                 @default(now())
+  updatedAt     DateTime                 @updatedAt
+
+  // Relations
+  user          User                     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  opportunity   Opportunity              @relation(fields: [opportunityId], references: [id], onDelete: Cascade)
+  statusHistory ApplicationStatusHistory[]
+  
+  @@unique([userId, opportunityId])
+  @@index([userId])
+  @@index([opportunityId])
+  @@index([status])
+  @@map("applications")
+}
+
+model ApplicationStatusHistory {
+  id            String            @id @default(cuid())
+  applicationId String
+  status        ApplicationStatus
+  notes         String?           @db.Text
+  changedBy     String?
+  createdAt     DateTime          @default(now())
+
+  application   Application       @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  
+  @@index([applicationId])
+  @@map("application_status_history")
+}
+
+model ProfessionalContact {
+  id          String       @id @default(cuid())
+  senderId    String
+  receiverId  String
+  status      ContactStatus @default(pending)
+  message     String?      @db.Text
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  sender      User         @relation("ContactSender", fields: [senderId], references: [id], onDelete: Cascade)
+  receiver    User         @relation("ContactReceiver", fields: [receiverId], references: [id], onDelete: Cascade)
+  recommendations ContactRecommendation[]
+  
+  @@unique([senderId, receiverId])
+  @@index([senderId])
+  @@index([receiverId])
+  @@index([status])
+  @@map("professional_contacts")
+}
+
+model ContactRecommendation {
+  id            String              @id @default(cuid())
+  contactId     String
+  recommenderId String
+  opportunityId String
+  message       String?             @db.Text
+  isAccepted    Boolean?
+  createdAt     DateTime            @default(now())
+  updatedAt     DateTime            @updatedAt
+
+  contact       ProfessionalContact @relation(fields: [contactId], references: [id], onDelete: Cascade)
+  recommender   User                @relation(fields: [recommenderId], references: [id], onDelete: Cascade)
+  
+  @@index([contactId])
+  @@index([recommenderId])
+  @@index([opportunityId])
+  @@map("contact_recommendations")
+}
+
+model Notification {
+  id        String           @id @default(cuid())
+  userId    String
+  type      NotificationType
+  title     String
+  message   String
+  data      Json?
+  isRead    Boolean          @default(false)
+  createdAt DateTime         @default(now())
+
+  user      User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@index([userId])
+  @@index([isRead])
+  @@map("notifications")
+}
+
+model ModerationQueueItem {
+  id          String             @id @default(cuid())
+  type        ModerationItemType
+  targetId    String
+  targetType  String
+  reason      String?
+  autoFlags   Json?
+  status      ModerationStatus   @default(pending)
+  curatorNotes String?           @db.Text
+  reviewedBy  String?
+  reviewedAt  DateTime?
+  createdAt   DateTime           @default(now())
+  updatedAt   DateTime           @updatedAt
+
+  reviewer    User?              @relation(fields: [reviewedBy], references: [id], onDelete: SetNull)
+  
+  @@index([type])
+  @@index([status])
+  @@index([targetId])
+  @@map("moderation_queue")
+}
+
+model Report {
+  id          String       @id @default(cuid())
+  reporterId  String
+  targetId    String
+  targetType  String
+  reason      ReportReason
+  description String?      @db.Text
+  status      ReportStatus @default(pending)
+  resolvedBy  String?
+  resolvedAt  DateTime?
+  resolution  String?      @db.Text
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  reporter    User         @relation("ReportCreator", fields: [reporterId], references: [id], onDelete: Cascade)
+  target      User         @relation("ReportTarget", fields: [targetId], references: [id], onDelete: Cascade)
+  
+  @@index([reporterId])
+  @@index([targetId])
+  @@index([status])
+  @@map("reports")
+}
+
+model AuditLog {
+  id          String     @id @default(cuid())
+  userId      String?
+  action      AuditAction
+  entityType  String
+  entityId    String?
+  oldData     Json?
+  newData     Json?
+  ipAddress   String?
+  userAgent   String?
+  createdAt   DateTime   @default(now())
+
+  user        User?      @relation(fields: [userId], references: [id], onDelete: SetNull)
+  
+  @@index([userId])
+  @@index([action])
+  @@index([entityType])
+  @@index([createdAt])
+  @@map("audit_logs")
+}
+
+model CuratorInvite {
+  id        String    @id @default(cuid())
+  email     String    @unique
+  token     String    @unique
+  createdBy String
+  usedAt    DateTime?
+  expiresAt DateTime
+  createdAt DateTime  @default(now())
+
+  @@index([token])
+  @@index([email])
+  @@map("curator_invites")
+}
