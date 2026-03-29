@@ -2,99 +2,155 @@
   "node": {
     "18c6033ac96057c64df980002cc3672bd21880ad": {
       "workers": {
-        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!",
-        "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!"
+        "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!",
+        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/(main)/page": "rsc",
-        "app/(main)/opportunity/[id]/page": "rsc"
+        "app/(main)/opportunity/[id]/page": "rsc",
+        "app/(main)/page": "rsc"
       }
     },
     "21806283024bd7a5267986b7a29cece43bb5e308": {
       "workers": {
-        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!",
-        "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!"
+        "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!",
+        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/(main)/page": "rsc",
-        "app/(main)/opportunity/[id]/page": "rsc"
+        "app/(main)/opportunity/[id]/page": "rsc",
+        "app/(main)/page": "rsc"
       }
     },
     "45d102bc5564aa9185aae7cec150abf47ee311d8": {
       "workers": {
-        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!",
-        "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!"
+        "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!",
+        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/(main)/page": "rsc",
-        "app/(main)/opportunity/[id]/page": "rsc"
+        "app/(main)/opportunity/[id]/page": "rsc",
+        "app/(main)/page": "rsc"
       }
     },
     "4b83b06896598e3ce66f6362972ded298663dd0d": {
       "workers": {
-        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!",
-        "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!"
+        "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!",
+        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/(main)/page": "rsc",
-        "app/(main)/opportunity/[id]/page": "rsc"
+        "app/(main)/opportunity/[id]/page": "rsc",
+        "app/(main)/page": "rsc"
       }
     },
     "65d5194cb2000d56a7b56b0c5557d30a59589af4": {
       "workers": {
-        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!",
-        "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!"
+        "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!",
+        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/(main)/page": "rsc",
-        "app/(main)/opportunity/[id]/page": "rsc"
+        "app/(main)/opportunity/[id]/page": "rsc",
+        "app/(main)/page": "rsc"
       }
     },
     "9bb0c696288f6e0a5883a5839a4ec4db11351590": {
       "workers": {
-        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!",
-        "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!"
+        "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!",
+        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/(main)/page": "rsc",
-        "app/(main)/opportunity/[id]/page": "rsc"
+        "app/(main)/opportunity/[id]/page": "rsc",
+        "app/(main)/page": "rsc"
       }
     },
     "ba00f927bc71a2a975ea39dc12631034dbef3ee8": {
       "workers": {
-        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!",
-        "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!"
+        "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!",
+        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/(main)/page": "rsc",
-        "app/(main)/opportunity/[id]/page": "rsc"
+        "app/(main)/opportunity/[id]/page": "rsc",
+        "app/(main)/page": "rsc"
       }
     },
     "33d984650689ac460783e69934e83b119090ca4f": {
       "workers": {
-        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!",
         "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!",
-        "app/(dashboard)/admin/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!",
+        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!",
         "app/(dashboard)/applicant/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ffavorites.ts%22%2C%5B%22checkIsFavorite%22%2C%22removeFromFavorites%22%2C%22getUserFavorites%22%2C%22addToFavorites%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fcontacts.ts%22%2C%5B%22recommendContact%22%2C%22respondToContactRequest%22%2C%22getUserContacts%22%2C%22getPendingContactRequests%22%2C%22removeContact%22%2C%22sendContactRequest%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/(main)/page": "rsc",
         "app/(main)/opportunity/[id]/page": "rsc",
-        "app/(dashboard)/admin/[[...slug]]/page": "rsc",
+        "app/(main)/page": "rsc",
         "app/(dashboard)/applicant/[[...slug]]/page": "rsc"
       }
     },
     "fe88e6cd9d36954cb7f5b6361b9fb2684ab883a2": {
       "workers": {
-        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!",
         "app/(main)/opportunity/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!",
-        "app/(dashboard)/admin/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%5D&__client_imported__=!",
+        "app/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fopportunities.ts%22%2C%5B%22getOpportunitiesForMap%22%2C%22getEmployerOpportunities%22%2C%22getOpportunities%22%2C%22changeOpportunityStatus%22%2C%22createOpportunity%22%2C%22getOpportunityById%22%2C%22updateOpportunity%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ftags.ts%22%2C%5B%22getAllTags%22%2C%22rejectTag%22%2C%22deleteTag%22%2C%22mergeTags%22%2C%22getTags%22%2C%22suggestTag%22%2C%22approveTag%22%5D%5D%5D&__client_imported__=!",
         "app/(dashboard)/applicant/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ffavorites.ts%22%2C%5B%22checkIsFavorite%22%2C%22removeFromFavorites%22%2C%22getUserFavorites%22%2C%22addToFavorites%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fcontacts.ts%22%2C%5B%22recommendContact%22%2C%22respondToContactRequest%22%2C%22getUserContacts%22%2C%22getPendingContactRequests%22%2C%22removeContact%22%2C%22sendContactRequest%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/(main)/page": "rsc",
         "app/(main)/opportunity/[id]/page": "rsc",
-        "app/(dashboard)/admin/[[...slug]]/page": "rsc",
+        "app/(main)/page": "rsc",
+        "app/(dashboard)/applicant/[[...slug]]/page": "rsc"
+      }
+    },
+    "02d8142cf5a514147457de8362f01b547b5c9648": {
+      "workers": {
+        "app/(main)/opportunity/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%5D&__client_imported__=true!",
+        "app/(dashboard)/applicant/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ffavorites.ts%22%2C%5B%22checkIsFavorite%22%2C%22removeFromFavorites%22%2C%22getUserFavorites%22%2C%22addToFavorites%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fcontacts.ts%22%2C%5B%22recommendContact%22%2C%22respondToContactRequest%22%2C%22getUserContacts%22%2C%22getPendingContactRequests%22%2C%22removeContact%22%2C%22sendContactRequest%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(main)/opportunity/[id]/page": "action-browser",
+        "app/(dashboard)/applicant/[[...slug]]/page": "rsc"
+      }
+    },
+    "034afc8ad54f7eeee5639d121e2c8304da16b84c": {
+      "workers": {
+        "app/(main)/opportunity/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%5D&__client_imported__=true!",
+        "app/(dashboard)/applicant/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ffavorites.ts%22%2C%5B%22checkIsFavorite%22%2C%22removeFromFavorites%22%2C%22getUserFavorites%22%2C%22addToFavorites%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fcontacts.ts%22%2C%5B%22recommendContact%22%2C%22respondToContactRequest%22%2C%22getUserContacts%22%2C%22getPendingContactRequests%22%2C%22removeContact%22%2C%22sendContactRequest%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(main)/opportunity/[id]/page": "action-browser",
+        "app/(dashboard)/applicant/[[...slug]]/page": "rsc"
+      }
+    },
+    "c448c919dbc7a7bed4152fc8ff7057db836a71f9": {
+      "workers": {
+        "app/(main)/opportunity/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%5D&__client_imported__=true!",
+        "app/(dashboard)/applicant/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ffavorites.ts%22%2C%5B%22checkIsFavorite%22%2C%22removeFromFavorites%22%2C%22getUserFavorites%22%2C%22addToFavorites%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fcontacts.ts%22%2C%5B%22recommendContact%22%2C%22respondToContactRequest%22%2C%22getUserContacts%22%2C%22getPendingContactRequests%22%2C%22removeContact%22%2C%22sendContactRequest%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(main)/opportunity/[id]/page": "action-browser",
+        "app/(dashboard)/applicant/[[...slug]]/page": "rsc"
+      }
+    },
+    "ca6ddfb742dacff2528cee8e8a26cb6f36979020": {
+      "workers": {
+        "app/(main)/opportunity/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%5D&__client_imported__=true!",
+        "app/(dashboard)/applicant/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ffavorites.ts%22%2C%5B%22checkIsFavorite%22%2C%22removeFromFavorites%22%2C%22getUserFavorites%22%2C%22addToFavorites%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fcontacts.ts%22%2C%5B%22recommendContact%22%2C%22respondToContactRequest%22%2C%22getUserContacts%22%2C%22getPendingContactRequests%22%2C%22removeContact%22%2C%22sendContactRequest%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(main)/opportunity/[id]/page": "action-browser",
+        "app/(dashboard)/applicant/[[...slug]]/page": "rsc"
+      }
+    },
+    "d15f713880c9b20f7157e32a0bbef2bf6d4ef334": {
+      "workers": {
+        "app/(main)/opportunity/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%5D&__client_imported__=true!",
+        "app/(dashboard)/applicant/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ffavorites.ts%22%2C%5B%22checkIsFavorite%22%2C%22removeFromFavorites%22%2C%22getUserFavorites%22%2C%22addToFavorites%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fcontacts.ts%22%2C%5B%22recommendContact%22%2C%22respondToContactRequest%22%2C%22getUserContacts%22%2C%22getPendingContactRequests%22%2C%22removeContact%22%2C%22sendContactRequest%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(main)/opportunity/[id]/page": "action-browser",
+        "app/(dashboard)/applicant/[[...slug]]/page": "rsc"
+      }
+    },
+    "faaa2f66832338e0da8835a456781f8b938a80ba": {
+      "workers": {
+        "app/(main)/opportunity/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%5D&__client_imported__=true!",
+        "app/(dashboard)/applicant/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ffavorites.ts%22%2C%5B%22checkIsFavorite%22%2C%22removeFromFavorites%22%2C%22getUserFavorites%22%2C%22addToFavorites%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fcontacts.ts%22%2C%5B%22recommendContact%22%2C%22respondToContactRequest%22%2C%22getUserContacts%22%2C%22getPendingContactRequests%22%2C%22removeContact%22%2C%22sendContactRequest%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(main)/opportunity/[id]/page": "action-browser",
         "app/(dashboard)/applicant/[[...slug]]/page": "rsc"
       }
     },
@@ -152,54 +208,6 @@
       },
       "layer": {
         "app/(main)/page": "rsc"
-      }
-    },
-    "02d8142cf5a514147457de8362f01b547b5c9648": {
-      "workers": {
-        "app/(dashboard)/applicant/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ffavorites.ts%22%2C%5B%22checkIsFavorite%22%2C%22removeFromFavorites%22%2C%22getUserFavorites%22%2C%22addToFavorites%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fcontacts.ts%22%2C%5B%22recommendContact%22%2C%22respondToContactRequest%22%2C%22getUserContacts%22%2C%22getPendingContactRequests%22%2C%22removeContact%22%2C%22sendContactRequest%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/(dashboard)/applicant/[[...slug]]/page": "rsc"
-      }
-    },
-    "034afc8ad54f7eeee5639d121e2c8304da16b84c": {
-      "workers": {
-        "app/(dashboard)/applicant/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ffavorites.ts%22%2C%5B%22checkIsFavorite%22%2C%22removeFromFavorites%22%2C%22getUserFavorites%22%2C%22addToFavorites%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fcontacts.ts%22%2C%5B%22recommendContact%22%2C%22respondToContactRequest%22%2C%22getUserContacts%22%2C%22getPendingContactRequests%22%2C%22removeContact%22%2C%22sendContactRequest%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/(dashboard)/applicant/[[...slug]]/page": "rsc"
-      }
-    },
-    "c448c919dbc7a7bed4152fc8ff7057db836a71f9": {
-      "workers": {
-        "app/(dashboard)/applicant/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ffavorites.ts%22%2C%5B%22checkIsFavorite%22%2C%22removeFromFavorites%22%2C%22getUserFavorites%22%2C%22addToFavorites%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fcontacts.ts%22%2C%5B%22recommendContact%22%2C%22respondToContactRequest%22%2C%22getUserContacts%22%2C%22getPendingContactRequests%22%2C%22removeContact%22%2C%22sendContactRequest%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/(dashboard)/applicant/[[...slug]]/page": "rsc"
-      }
-    },
-    "ca6ddfb742dacff2528cee8e8a26cb6f36979020": {
-      "workers": {
-        "app/(dashboard)/applicant/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ffavorites.ts%22%2C%5B%22checkIsFavorite%22%2C%22removeFromFavorites%22%2C%22getUserFavorites%22%2C%22addToFavorites%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fcontacts.ts%22%2C%5B%22recommendContact%22%2C%22respondToContactRequest%22%2C%22getUserContacts%22%2C%22getPendingContactRequests%22%2C%22removeContact%22%2C%22sendContactRequest%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/(dashboard)/applicant/[[...slug]]/page": "rsc"
-      }
-    },
-    "d15f713880c9b20f7157e32a0bbef2bf6d4ef334": {
-      "workers": {
-        "app/(dashboard)/applicant/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ffavorites.ts%22%2C%5B%22checkIsFavorite%22%2C%22removeFromFavorites%22%2C%22getUserFavorites%22%2C%22addToFavorites%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fcontacts.ts%22%2C%5B%22recommendContact%22%2C%22respondToContactRequest%22%2C%22getUserContacts%22%2C%22getPendingContactRequests%22%2C%22removeContact%22%2C%22sendContactRequest%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/(dashboard)/applicant/[[...slug]]/page": "rsc"
-      }
-    },
-    "faaa2f66832338e0da8835a456781f8b938a80ba": {
-      "workers": {
-        "app/(dashboard)/applicant/[[...slug]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fapplications.ts%22%2C%5B%22addApplicationNote%22%2C%22createApplication%22%2C%22withdrawApplication%22%2C%22getOpportunityApplications%22%2C%22getUserApplications%22%2C%22updateApplicationStatus%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Faudit.ts%22%2C%5B%22getAuditLogs%22%2C%22logAudit%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Ffavorites.ts%22%2C%5B%22checkIsFavorite%22%2C%22removeFromFavorites%22%2C%22getUserFavorites%22%2C%22addToFavorites%22%5D%5D%2C%5B%22%2FUsers%2Fadmin%2FOlimp_project%2Fsrc%2Factions%2Fcontacts.ts%22%2C%5B%22recommendContact%22%2C%22respondToContactRequest%22%2C%22getUserContacts%22%2C%22getPendingContactRequests%22%2C%22removeContact%22%2C%22sendContactRequest%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/(dashboard)/applicant/[[...slug]]/page": "rsc"
       }
     },
     "3ad54a74bae78598510290cf8cb121d8c2521fd5": {
@@ -284,5 +292,5 @@
     }
   },
   "edge": {},
-  "encryptionKey": "Ca9Jx0Nopj5zAuNO3fXBsxcpoODXMpn+cTDjLUpf+d4="
+  "encryptionKey": "vLf5Ih50yTKHzTZLv7KhyJ6GT9MgrqwTyRfFLIprpI4="
 }

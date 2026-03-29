@@ -14,6 +14,7 @@ import {
 } from '@/lib/constants';
 import { MapPin, Calendar, DollarSign, Building2, Heart, Share2 } from 'lucide-react';
 import Link from 'next/link';
+import { ApplyButton } from '@/components/opportunity/ApplyButton';
 
 interface OpportunityPageProps {
   params: { id: string };
@@ -144,15 +145,15 @@ export default async function OpportunityPage({ params }: OpportunityPageProps) 
               </div>
 
               <div className="mt-6 space-y-3">
-                {session?.user?.role === 'applicant' && !opportunity.hasApplied && (
-                  <Button className="w-full">Откликнуться</Button>
+                {session?.user?.role === 'applicant' && session?.user?.id && (
+                  <ApplyButton
+                    opportunityId={opportunity.id}
+                    userId={session.user.id}
+                    hasApplied={opportunity.hasApplied}
+                    opportunityTitle={opportunity.title}
+                  />
                 )}
-                {session?.user?.role === 'applicant' && opportunity.hasApplied && (
-                  <Button className="w-full" disabled>
-                    Вы уже откликнулись
-                  </Button>
-                )}
-                {!session && (
+                {(!session || session?.user?.role !== 'applicant') && (
                   <Link href="/login">
                     <Button className="w-full">Войдите, чтобы откликнуться</Button>
                   </Link>
