@@ -78,23 +78,8 @@ const FACULTIES = [
   'Экономика и IT',
 ];
 
-const COMPANY_NAMES = [
-  'Яндекс',
-  'VK',
-  'Сбер',
-  'Т-Банк (Тинькофф)',
-  'Авито',
-  'Ozon',
-  'Wildberries',
-  'Kaspersky',
-  'Positive Technologies',
-  'EPAM',
-  'Luxoft',
-  'DataArt',
-  'Bell Integrator',
-  'CROC',
-  'Softline',
-];
+// Generate unique company names
+const generateCompanyName = (index: number) => `Организация ${index}`;
 
 const OPPORTUNITY_TITLES = {
   internship: [
@@ -229,7 +214,7 @@ async function main() {
   console.log('👤 Creating employers...');
   const employers = [];
   for (let i = 1; i <= 5; i++) {
-    const companyName = COMPANY_NAMES[i - 1];
+    const companyName = generateCompanyName(i);
     const city = CITIES[i % CITIES.length];
     
     const employer = await prisma.user.create({
@@ -243,17 +228,17 @@ async function main() {
           create: {
             name: companyName,
             inn: `770000000${i}`,
-            website: `https://${companyName.toLowerCase().replace(/[^a-z0-9]/g, '')}.ru`,
-            email: `hr@${companyName.toLowerCase().replace(/[^a-z0-9]/g, '')}.ru`,
-            description: `${companyName} — ведущая технологическая компания России. Мы разрабатываем инновационные продукты и сервисы для миллионов пользователей.`,
+            website: `https://company${i}.ru`,
+            email: `hr@company${i}.ru`,
+            description: `${companyName} — технологическая компания. Мы разрабатываем инновационные продукты и сервисы.`,
             industry: 'Информационные технологии',
             city: city.name,
             address: `г. ${city.name}, ул. Технологическая, ${i * 10}`,
             logoUrl: null,
             bannerUrl: null,
             socialLinks: {
-              telegram: `https://t.me/${companyName.toLowerCase().replace(/[^a-z0-9]/g, '')}`,
-              vk: `https://vk.com/${companyName.toLowerCase().replace(/[^a-z0-9]/g, '')}`,
+              telegram: `https://t.me/company${i}`,
+              vk: `https://vk.com/company${i}`,
             },
             verificationStatus: i <= 3 ? VerificationStatus.verified : VerificationStatus.pending,
           },
@@ -268,10 +253,10 @@ async function main() {
         data: {
           companyId: employer.company!.id,
           inn: `770000000${i}`,
-          corporateEmail: `hr@${companyName.toLowerCase().replace(/[^a-z0-9]/g, '')}.ru`,
-          website: `https://${companyName.toLowerCase().replace(/[^a-z0-9]/g, '')}.ru`,
+          corporateEmail: `hr@company${i}.ru`,
+          website: `https://company${i}.ru`,
           socialLinks: {
-            telegram: `https://t.me/${companyName.toLowerCase().replace(/[^a-z0-9]/g, '')}`,
+            telegram: `https://t.me/company${i}`,
           },
           documents: [],
           status: VerificationStatus.verified,
@@ -287,12 +272,15 @@ async function main() {
   // Create Applicants
   console.log('👤 Creating applicants...');
   const applicants = [];
-  const firstNames = ['Александр', 'Мария', 'Дмитрий', 'Анна', 'Максим', 'Елена', 'Иван', 'Ольга', 'Артем', 'Наталья'];
-  const lastNames = ['Иванов', 'Петров', 'Сидоров', 'Смирнов', 'Кузнецов', 'Попов', 'Васильев', 'Соколов', 'Михайлов', 'Новиков'];
+  const firstNames = ['Александр', 'Дмитрий', 'Максим', 'Иван', 'Артем', 'Сергей', 'Андрей', 'Алексей', 'Павел', 'Никита', 'Владимир', 'Егор', 'Илья', 'Денис', 'Кирилл', 'Михаил', 'Роман', 'Виктор', 'Глеб', 'Тимофей'];
+  const lastNames = ['Иванов', 'Петров', 'Сидоров', 'Смирнов', 'Кузнецов', 'Попов', 'Васильев', 'Соколов', 'Михайлов', 'Новиков', 'Федоров', 'Морозов', 'Волков', 'Алексеев', 'Лебедев', 'Семенов', 'Егоров', 'Павлов', 'Козлов', 'Степанов'];
 
   for (let i = 1; i <= 20; i++) {
-    const firstName = firstNames[i % firstNames.length];
-    const lastName = lastNames[i % lastNames.length];
+    // Use unique combinations to avoid duplicates
+    const firstNameIndex = (i - 1) % firstNames.length;
+    const lastNameIndex = Math.floor((i - 1) / firstNames.length) % lastNames.length;
+    const firstName = firstNames[firstNameIndex];
+    const lastName = lastNames[lastNameIndex];
     const fullName = `${firstName} ${lastName}`;
     const university = UNIVERSITIES[i % UNIVERSITIES.length];
     const faculty = FACULTIES[i % FACULTIES.length];

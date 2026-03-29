@@ -1,8 +1,8 @@
-// File: /Users/admin/Olimp_project/src/app/(main)/opportunity/[id]/page.tsx
-import * as entry from '../../../../../../src/app/(main)/opportunity/[id]/page.js'
+// File: /Users/admin/Olimp_project/src/app/(main)/catalog/page.tsx
+import * as entry from '../../../../../src/app/(main)/catalog/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../../../src/app/(main)/opportunity/[id]/page.js')
+type TEntry = typeof import('../../../../../src/app/(main)/catalog/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{
